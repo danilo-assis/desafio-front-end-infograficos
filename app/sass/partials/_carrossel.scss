@@ -1,0 +1,43 @@
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  position: relative;
+}
+
+.embla__slide {
+  position: relative; /* Needed if loop: true */
+  flex: 0 0 100%; /* Choose any slide width */ 
+}
+
+.bt-move-slide{
+ position: absolute;
+  top: 50%;
+  
+}
+
+#bt-next-slide{
+  transform: translateY(-100%);
+  right: 0;
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: red;
+}
+
+#bt-prev-slide{
+  transform: translateY(-100%); 
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: red;
+}
+
