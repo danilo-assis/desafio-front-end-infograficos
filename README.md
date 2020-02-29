@@ -1,43 +1,38 @@
-# Teste - Front-End
-O desafio é realizar o desenvolvimento front-end da homepage de um jornal fictício. O desenvolvimento deve seguir fielmente o layout disponibilizado nos arquivos abaixo (espaçamento, cores, tipografia e etc). Você não deve utilizar nenhum framework CSS (Bootstrap, Foundation e etc) neste desafio.
+# Requisitos
+Node.js v4.4.0 ou superior
 
-## Instruções - Topo
-* O submenu deve ser ativado no hover
-* Os links do submenu não precisam ser verídicos
+# Como rodar via terminal
+- Para rodar o servidor do projeto:
+```sh
+$ npm start
+```
+<br />
 
-## Instruções - Slide
-* Não pode ser utilizado nenhum plugin Jquery. Você pode, entretanto, usar o Jquery para manipular os elementos
-* O nome das imagens, bem como a ordem delas, encontra-se no JSON [slide](Arquivos/JSON/slide.json)
+# Acesso ao projeto online
+- O projeto sera disponibilizado na URL:
+```sh
 
-## Instruções - Editorias
-* A lista de editorias deve ser gerada a partir do JSON [notícias](Arquivos/JSON/noticias.json)
-* As notícias devem ser exibidas de acordo com a editoria que está selecionada no selectbox, se nenhuma editoria estiver selecionada, todas as notícias precisam aparecer
-* Deverá ser possível ordenar as notícias por data de publicacão (da mais recente para a mais antiga) ou por ordem alfabética
-* As notícias dessa sessão devem vir do arquivo JSON chamado [notícias](Arquivos/JSON/noticias.json)
-* O conteúdo da notícia também deve ser gerado dinamicamente (data, editoria, foto, título e texto)
+```
+<br />
 
-## Instruções - Gráfico
-* Fique à vontade para usar a ferramenta que preferir para gerar o gráfico. A única exigência é que ele seja gerado dinamicamente
+# Uso do Webpack
+A pasta "app" é a pasta de desenvolvimento.
+<br />
+Uma vez o webpack tendo feito o build, o resultado é gerado na pasta "build".
 
-## Instruções - Mapa
-* O mapa deve ser gerado usando a API do Google Maps
-* O pin/mark do mapa deve ser inserido via API do Google Maps
-
-## Observações
-* Você está livre para escolher a estrutura de diretórios da aplicação 
-* Você não deve utilizar nenhum framework CSS (Bootstrap, Foundation e etc) neste desafio.
-* Os arquivos .json não podem ser alterados
-* Dúvida? Entre em contato por email: daniel.lima@oglobo.com.br
-
-## Arquivos
-- Layout [aqui](Arquivos/Layout)
-- Imagens [aqui](Arquivos/Imagens)
-- JSONS [aqui](Arquivos/JSON)
-
-## Como submeter seu projeto
-- Fork esse projeto
-- Coloque seu projeto no repositório
-- Escreva no arquivo README.md as instruções para rodar o mesmo 
-- Envie o link do repositório para daniel.lima@oglobo.com.br, com o assunto: TESTE - Front-End O Globo
-
-## Boa sorte!
+# Scripts NPM
+- Para rodar o servidor do projeto, sem build:
+```sh
+$ npm start
+```
+- Para fazer o build do projeto minificado para produção:
+```sh
+$ npm run build
+```
+- Para fazer o build do projeto para desenvolvimento:
+```sh
+$ npm run build:dev
+```
+Após rodar o servidor, o browser irá abrir na URL do projeto e a cada alteração no código, ocorrerá refresh automático.
+<br />
+Caso deseje mudar a porta padrão (9000), basta alterar a mesma no arquivo "webpack.config.babel.js".
