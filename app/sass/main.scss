@@ -1,7 +1,11 @@
-.forceDisplay {
-    display: inline !important;
-}
-
-/* autoprefixer test */
+@import 'partials/reset';
 @import 'partials/menu';
 @import 'partials/carrossel';
+@import 'partials/grid';
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-width: auto;
+  padding: 52px;
+}

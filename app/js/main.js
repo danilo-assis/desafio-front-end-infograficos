@@ -4,4 +4,5 @@ if (NODE_ENV !== 'PROD') {
 // Style
 import '../sass/main.scss';
 import './carrossel.js';
+import './grid';
 

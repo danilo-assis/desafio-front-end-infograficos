@@ -47,6 +47,8 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
-    "embla-carousel": "^2.8.0"
+    "embla-carousel": "^2.8.0",
+    "filterizr": "^2.2.3",
+    "list.js": "^1.5.0"
   }
 }
