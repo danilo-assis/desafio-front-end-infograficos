@@ -17,12 +17,13 @@ const changeNews = () => {
         htmlTeste += `
         <div class='noticia'>
           <div>
-          <p class="asdsad">${editoria.Editoria}</p>
-          <p class="asdsad">${noticia["Data de publicação"]}</p>
+          <p>${editoria.Editoria}</p>
+          <p>${noticia["Data de publicação"]}</p>
           </div>
-          <img src="../img/' + ${noticia.Foto} '" alt="${noticia.Título}"/>
-          <p class="asdsad">${noticia.Título}</p>
-          <p class="asdsad">${noticia.Texto}</p>
+          <img src="../img/${noticia.Foto}" alt="${noticia.Titulo}" />;
+          <p>${noticia.Título}</p>
+          <p>${noticia.Texto}</p>
+          <p>${noticia.Foto}</p>
         </div>
         `;
       });
