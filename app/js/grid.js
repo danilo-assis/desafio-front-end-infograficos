@@ -16,14 +16,19 @@ const changeNews = () => {
         // console.log('noticia', noticia);
         htmlTeste += `
         <div class='noticia'>
-          <div>
-          <p>${editoria.Editoria}</p>
-          <p>${noticia["Data de publicação"]}</p>
+          <div class='linha-lateral'>
+              <div>
+                <p>${editoria.Editoria}</p>
+                <p>${noticia["Data de publicação"]}</p>
+              </div>
+              <img src="../img/${noticia.Foto}" alt="${noticia.Titulo}" />
+              <div class='conteudo'>
+                <p>${noticia.Título}</p>
+                <p>${noticia.Texto}</p>
+                <br><br>
+                <p><b>Saiba Mais</b></p>
+              </div>
           </div>
-          <img src="../img/${noticia.Foto}" alt="${noticia.Titulo}" />;
-          <p>${noticia.Título}</p>
-          <p>${noticia.Texto}</p>
-          <p>${noticia.Foto}</p>
         </div>
         `;
       });
