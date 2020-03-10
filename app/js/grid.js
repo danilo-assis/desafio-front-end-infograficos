@@ -2,6 +2,16 @@ import mockNoticias from './mock/mockNoticias';
 
 const elNewsContainer = document.querySelector('.grid__list')
 ;
+
+function load(){
+  var filtro=document.getElementById("filter");
+  filtro.addEventListener("click",selector);
+  }
+  function selector(){
+  const valorDoSelect = document.querySelector('#editoriais').value;
+  }
+  window.addEventListener("load",load);
+
 // const valorDoSelect = document.querySelector('#select').value;
 const selectVal = '';
 
@@ -16,7 +26,6 @@ const changeNews = () => {
         // console.log('noticia', noticia);
         htmlTeste += `
         <div class='noticia'>
-          <div class='linha-lateral'>
               <div>
                 <p>${editoria.Editoria}</p>
                 <p>${noticia["Data de publicação"]}</p>
@@ -28,7 +37,6 @@ const changeNews = () => {
                 <br><br>
                 <p><b>Saiba Mais</b></p>
               </div>
-          </div>
         </div>
         `;
       });
@@ -39,4 +47,3 @@ const changeNews = () => {
 };
 
 changeNews();
-
