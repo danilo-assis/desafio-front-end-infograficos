@@ -4,13 +4,23 @@ const elNewsContainer = document.querySelector('.grid__list')
 ;
 
 function load(){
-  var filtro=document.getElementById("filter");
-  filtro.addEventListener("click",selector);
-  }
-  function selector(){
+
   const valorDoSelect = document.querySelector('#editoriais').value;
-  }
-  window.addEventListener("load",load);
+
+  const edFil = mockNoticias[0].Editorias;
+  edFil.forEach(edFil => {
+
+    if ((valorDoSelect === '') || (edFil.Editoria === valorDoSelect)) {
+      htmlTeste += `
+      `;
+    }
+  });
+}
+
+var filtro=document.querySelector('#editoriais');
+filtro.addEventListener("click",load);
+
+  // window.addEventListener("load",load);
 
 // const valorDoSelect = document.querySelector('#select').value;
 const selectVal = '';
