@@ -4,11 +4,11 @@
 	justify-content: space-around;
 	align-items: center;
   position: relative;
-  
+
   &__logo {
-    width: 350px; 
+    width: 350px;
     height: auto;
-    
+
   }
 
 	&__menu {
@@ -16,10 +16,12 @@
 		justify-content: space-around;
     width: 45%;
 
-		&--item {
-			list-style: none;
+
+		&__item {
+      list-style: none;
+      position: relative;
 		}
-		&--link {
+		&__link {
 			padding-bottom: 4px;
 			color: #222831;
 			text-decoration: none;
@@ -40,12 +42,12 @@
 	padding: 5px 40px 0px 5px;
   left: 0;
   opacity: 0;
-  position: relative;
+  position: absolute;
   top: 35px;
   visibility: hidden;
 	z-index: 1;
 	background-color: wheat;
-	
+
 	&__sub-item{
 		color: #222831;
 		&:hover {
