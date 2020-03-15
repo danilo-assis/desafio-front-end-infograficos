@@ -12,8 +12,7 @@ function changeNews() {
   const valEditoriasSelect = elEditoriasContainer.value;
   const editorias = mockNoticias[0].Editorias;
 
-
-  sortedEditorias.forEach(editoria => {
+  editorias.forEach(editoria => {
     if ((valEditoriasSelect === '') || (editoria.Editoria === valEditoriasSelect)) {
       editoria['Notícias'].forEach(noticia => {
         htmlEditorias += `
