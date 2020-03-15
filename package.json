@@ -47,8 +47,10 @@
   },
   "dependencies": {
     "@glidejs/glide": "^3.4.1",
+    "chart.js": "^2.9.3",
     "embla-carousel": "^2.8.0",
     "filterizr": "^2.2.3",
+    "highcharts": "^8.0.4",
     "list.js": "^1.5.0"
   }
 }

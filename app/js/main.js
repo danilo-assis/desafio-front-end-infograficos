@@ -5,4 +5,4 @@ if (NODE_ENV !== 'PROD') {
 import '../sass/main.scss';
 import './carrossel.js';
 import './grid';
-
+import  './graphic';
