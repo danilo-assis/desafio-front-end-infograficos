@@ -3,79 +3,82 @@ import mockNoticias from './mock/mockNoticias';
 const elNewsContainer = document.querySelector('.grid__list')
 ;
 
-// var filtro=document.querySelector('#editoriais');
-// filtro.addEventListener("click",load());
+const elEditoriasContainer = document.querySelector('#editoriais-select');
 
-// let htmlGrid = '';
 
-// function load(){
+function changeNews() {
+  let htmlEditorias = '';
 
-//   const valorDoSelect = document.querySelector('#editoriais').value;
+  const valEditoriasSelect = elEditoriasContainer.value;
+  const editorias = mockNoticias[0].Editorias;
 
-//   const edFil = mockNoticias[0].Editorias;
-//   edFil.forEach(edFil => {
 
-//     if ((valorDoSelect === '') || (edFil.Editoria === valorDoSelect)) {
-//       edFil['Notícias'].forEach(noticia => {
-//         htmlGrid += `
-//         <div class='noticia'>
-//                 <div>
-//                   <p>${editoria.Editoria}</p>
-//                   <p>${noticia["Data de publicação"]}</p>
-//                 </div>
-//                 <img src="../img/${noticia.Foto}" alt="${noticia.Titulo}" />
-//                 <div class='conteudo'>
-//                   <p>${noticia.Título}</p>
-//                   <p>${noticia.Texto}</p>
-//                   <br><br>
-//                   <p><b>Saiba Mais</b></p>
-//                 </div>
-//           </div>
-//         `;
-//       });
-//       }
-//   });
+  sortedEditorias.forEach(editoria => {
+    if ((valEditoriasSelect === '') || (editoria.Editoria === valEditoriasSelect)) {
+      editoria['Notícias'].forEach(noticia => {
+        htmlEditorias += `
+          <div class='noticia'>
+            <div>
+              <p>${editoria.Editoria}</p>
+              <p>${noticia["Data de publicação"]}</p>
+            </div>
+            <img src="../img/${noticia.Foto}" alt="${noticia.Titulo}" />
+            <div class='conteudo'>
+              <p>${noticia.Título}</p>
+              <p>${noticia.Texto}</p>
+              <br><br>
+              <p><b>Saiba Mais</b></p>
+            </div>
+          </div>
+        `;
+      });
+    }
+  });
 
-//   elNewsContainer.innerHTML = htmlGrid;
-// }
+  elNewsContainer.innerHTML = htmlEditorias;
+}
+
+changeNews();
+
+elEditoriasContainer.addEventListener("change", changeNews);
 
 
 
   // window.addEventListener("load",load);
 
 // const valorDoSelect = document.querySelector('#select').value;
-const selectVal = '';
+// const selectVal = '';
 
-const changeNews = () => {
-  let htmlTeste = '';
-  const editorias = mockNoticias[0].Editorias;
+// const changeNews = () => {
+//   let htmlTeste = '';
+//   const editorias = mockNoticias[0].Editorias;
 
-  editorias.forEach(editoria => {
+//   editorias.forEach(editoria => {
 
-    if ((selectVal === '') || (editoria.Editoria === selectVal)) {
-      editoria['Notícias'].forEach(noticia => {
-        // console.log('noticia', noticia);
-        htmlTeste += `
-        <div class='noticia'>
-              <div>
-                <p>${editoria.Editoria}</p>
-                <p>${noticia["Data de publicação"]}</p>
-              </div>
-              <img src="../img/${noticia.Foto}" alt="${noticia.Titulo}" />
-              <div class='conteudo'>
-                <p>${noticia.Título}</p>
-                <p>${noticia.Texto}</p>
-                <br><br>
-                <p><b>Saiba Mais</b></p>
-              </div>
-        </div>
-        `;
-      });
-    }
-  });
+//     if ((selectVal === '') || (editoria.Editoria === selectVal)) {
+//       editoria['Notícias'].forEach(noticia => {
+//         // console.log('noticia', noticia);
+//         htmlTeste += `
+//         <div class='noticia'>
+//               <div>
+//                 <p>${editoria.Editoria}</p>
+//                 <p>${noticia["Data de publicação"]}</p>
+//               </div>
+//               <img src="../img/${noticia.Foto}" alt="${noticia.Titulo}" />
+//               <div class='conteudo'>
+//                 <p>${noticia.Título}</p>
+//                 <p>${noticia.Texto}</p>
+//                 <br><br>
+//                 <p><b>Saiba Mais</b></p>
+//               </div>
+//         </div>
+//         `;
+//       });
+//     }
+//   });
 
-  elNewsContainer.innerHTML = htmlTeste;
-};
+//   elNewsContainer.innerHTML = htmlTeste;
+// };
 
-changeNews();
+// changeNews();
 // load();
