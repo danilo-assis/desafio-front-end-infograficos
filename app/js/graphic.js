@@ -2,11 +2,11 @@ var Highcharts = require('highcharts');
 // Load module after Highcharts is loaded
 require('highcharts/modules/exporting')(Highcharts);
 // Create the chart
-Highcharts.chart('container', { /*Highcharts options*/ });
+Highcharts.chart('container-graphG', { /*Highcharts options*/ });
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  var myChart = Highcharts.chart('container', {
+  var myChart = Highcharts.chart('container-graphG', {
       chart: {
           type: 'column'
       },
