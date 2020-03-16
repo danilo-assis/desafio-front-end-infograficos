@@ -1,26 +1,47 @@
-nav.nav
-  .nav__logo
-    img(src="../../img/logo.svg", alt="Minuto News")
-  ul.nav__menu
-    li.nav__menu__item
-      a.nav__menu__link(href="#") Início
-    li.nav__menu__item
-      a.nav__menu__link(href="#") Brasil
-        ul.submenu
-          li
-            a.submenu__sub-item(href='') Submenu 01
-          li
-            a.submenu__sub-item(href='') Submenu 02
-          li
-            a.submenu__sub-item(href='') Submenu 03
-          li
-            a.submenu__sub-item(href='') Submenu 04
-          li
-            a.submenu__sub-item(href='') Submenu 05
+//- nav.nav
+//-   .nav__logo
+//-     img(src="../../img/logo.svg", alt="Minuto News")
+  //- ul.nav__menu
+  //-   li.nav__menu__item
+  //-     a.nav__menu__link(href="#") Início
+  //-   li.nav__menu__item
+  //-     a.nav__menu__link(href="#") Brasil
+  //-       ul.submenu
+  //-         li
+  //-           a.submenu__sub-item(href='') Submenu 01
+  //-         li
+  //-           a.submenu__sub-item(href='') Submenu 02
+  //-         li
+  //-           a.submenu__sub-item(href='') Submenu 03
+  //-         li
+  //-           a.submenu__sub-item(href='') Submenu 04
+  //-         li
+  //-           a.submenu__sub-item(href='') Submenu 05
 
-    li.nav__menu__item
-      a.nav__menu__link(href="#") Mundo
-    li.nav__menu__item
-      a.nav__menu__link(href="#") Blogs
-    li.nav__menu__item
-      a.nav__menu__link(href="#") Assine
+  //-   li.nav__menu__item
+  //-     a.nav__menu__link(href="#") Mundo
+  //-   li.nav__menu__item
+  //-     a.nav__menu__link(href="#") Blogs
+  //-   li.nav__menu__item
+  //-     a.nav__menu__link(href="#") Assine
+
+  .container
+    .logo-box
+      a(href='/')
+        img(src='../../img/logo.svg')
+nav
+  .container
+    .logo-box
+      img(src="../../img/logo.svg", alt="Minuto News")
+  ul
+    li
+      a.link(href='#') Início
+    li
+      a.link(href='#') Brasil
+    li
+      a.link(href='#') Mundo
+    li
+      a.link(href='#') Blogs
+    li
+      a.link(href='#') Assine
+
