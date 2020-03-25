@@ -11,7 +11,7 @@ $ npm start
 # Acesso ao projeto online
 - O projeto sera disponibilizado na URL:
 ```sh
-
+  http://info-desafio-oglobo.surge.sh/
 ```
 <br />
 
